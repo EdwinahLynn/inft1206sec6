@@ -114,6 +114,7 @@
     <main>
       <article>
         <!-- insert iframe from youtube -->
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg?si=SJ0wGO9IoYVWX6kr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -125,22 +126,42 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img
+          srcset="./images/firefoxlogo120.png 120w, ./images/firefoxlogo400.png 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="./images/firefoxlogo400.png"
+          alt="firefox logo"/>
         </a>
+
         <a href="https://www.mozilla.org/">
-          <img>
+          <img
+          srcset="./images/mozilladinosaurhead120.png 120w, ./images/mozilladinosaurhead400.png 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="./images/mozilladinosaurhead400.png"
+          alt="mozilla dinasaur head"
+          />
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img
+          srcset="./images/firefoxaddons120.png 120w, ./images/firefoxaddons400.png 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="/images/firefoxaddons400.png 400w"
+          alt="fire logo"/>
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img
+          src="./images/mdn.svg"
+          alt="logo"/>
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+          <source media="" srcset=""/>
+          <source media="" srcset=""/>
+        </picture>
       </div>
 
     </main>
