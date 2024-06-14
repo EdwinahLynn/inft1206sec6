@@ -62,8 +62,20 @@ header, footer {
 }
 html{
     font-family: abeezeeregular;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: afta_seriregular;
+    font-size: 20px;
+    letter-spacing: 0.2px;
 
+}
+h1{
+    text-align: center;
+}
+section > h2 + p{
+    text-indent: 20px;
 }
