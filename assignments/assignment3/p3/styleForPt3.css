@@ -43,3 +43,27 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+@font-face {
+    font-family: 'afta_serifregular';
+    src: url('fonts/aftaserifthin-regular-webfont.woff2') format('woff2'),
+         url('fonts/aftaserifthin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'abeezeeregular';
+    src: url('fonts/abeezee-regular-webfont.woff2') format('woff2'),
+         url('fonts/abeezee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html{
+    font-family: abeezeeregular;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: afta_seriregular;
+
+}
