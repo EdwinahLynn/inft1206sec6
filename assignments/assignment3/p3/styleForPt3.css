@@ -111,7 +111,7 @@ ul{
 }
 nav{
   float: right;
-  margin-top: 0;
+  margin-left: 0;
 }
 nav ul{
   list-style-type: none;
