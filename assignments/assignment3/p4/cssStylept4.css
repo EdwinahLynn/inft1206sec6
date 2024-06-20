@@ -71,6 +71,8 @@ body {
     margin-right: 20px;
     margin-bottom: 15px;
   }
-  .Column{
-    column-count: 2;
+  .photos{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-gap: 1px;
   }
