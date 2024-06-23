@@ -64,13 +64,12 @@ body {
 
   .feature {
       width: 200px;
-  }
-  
-  .feature{
-    float: left;
+      float: left;
     margin-right: 20px;
     margin-bottom: 15px;
   }
+  
+
   .photos{
     display: grid;
     grid-template-columns:1fr 1fr ;
