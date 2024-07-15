@@ -22,9 +22,14 @@ function result() {
     let yItem = randomValueFromArray(insertY)
     let zItem = randomValueFromArray(insertZ)
 
+    newStory = newStory.replaceAll(":insertx:", xItem)
+    newStory = newStory.replace(":inserty:", yItem)
+    newStory = newStory.replace(":insertz:", zItem)
+
+
   if(customName.value !== '') {
     const name = customName.value;
-    const nameUpdate = newStory.replace("Bob", name)
+    newStory = newStory.replace("Bob", name)
 
   }
 
@@ -33,7 +38,7 @@ function result() {
     const temperature =  Math.round((94-32)*(5/9)) + " centigrade";
     
     newStory = newStory.replace("300 pounds", weight)
-    newStory = newStory.replace("94 farenheit", temperature)
+    newStory = newStory.replace("94 fahrenheit", temperature)
 
   }
 
