@@ -28,3 +28,18 @@ for (let i = 0; i <= imageFiles.length-1; i++){
     
 
 /* Wiring up the Darken/Lighten button */
+function theme(){
+    const btnClassName= btn.getAttribute('class');
+
+    if (btnClassName == "dark"){
+        btn.setAttribute('class','light')
+        btn.textContent = 'Lighten';
+        overlay.style.backgroundColor = "rgba(0,0,0,0.5)"
+    }
+    else{
+        btn.setAttribute('class','dark')
+        btn.textContent = 'Darken';
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0%)"
+    }
+}
+btn.addEventListener('click', theme);
