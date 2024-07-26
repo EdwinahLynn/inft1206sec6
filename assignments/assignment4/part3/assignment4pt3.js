@@ -17,6 +17,12 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
+
+// Creating references to the HTML file
+let paragraph = document.querySelector("p")
+let counter = 0;
+
+
 class Shape{
     constructor(x, y, velX, velY){
     this.x = x;
@@ -108,19 +114,19 @@ class EvilCircle extends Shape{
     }
     checkBounds(){
         if (this.x + this.size >= width) {
-            this.x = -Math.abs(this.velX);
+            this.x = -Math.abs(this.x);
           }
       
           if (this.x - this.size <= 0) {
-            this.x = Math.abs(this.velX);
+            this.x = Math.abs(this.x);
           }
       
           if (this.y + this.size >= height) {
-            this.y = -Math.abs(this.velY);
+            this.y = -Math.abs(this.y);
           }
       
           if (this.y - this.size <= 0) {
-            this.y = Math.abs(this.velY);
+            this.y = Math.abs(this.y);
           }
     }
     collisionDetect(){
@@ -132,6 +138,8 @@ class EvilCircle extends Shape{
         
               if (distance < this.size + ball.size) {
                 ball.exists = false;
+                counter--;
+                paragraph.textContent = counter;
               }
             }
           }
@@ -151,15 +159,18 @@ while (balls.length < 25) {
     random(-7, 7),
     randomRGB(),
     size
+    
   );
-
   balls.push(ball);
+  counter++;
+  paragraph.textContent = counter;
+  
 }
 
+const evilCircle = new EvilCircle( 1,1)
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
-  const evilCircle = new EvilCircle( 1,1,)
 
   for (const ball of balls) {
     if (ball.exists){
@@ -167,10 +178,11 @@ function loop() {
         ball.update();
         ball.collisionDetect();
     }
+}
+        
     evilCircle.draw();
     evilCircle.checkBounds();
     evilCircle.collisionDetect();
-}
 
   requestAnimationFrame(loop);
 }
