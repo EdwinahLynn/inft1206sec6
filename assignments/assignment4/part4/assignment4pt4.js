@@ -12,3 +12,11 @@ const aliceTumbling = [
   const alice1 = document.querySelector("#alice1");
   const alice2 = document.querySelector("#alice2");
   const alice3 = document.querySelector("#alice3");
+
+  const firstAnimation = alice1.animate(aliceTumbling, aliceTiming);
+  
+firstAnimation.finished
+    .then(alice2.animate(aliceTumbling, aliceTiming)
+    .then(alice3.animate(aliceTumbling, aliceTiming)
+  
+));
