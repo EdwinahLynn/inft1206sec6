@@ -24,3 +24,4 @@ const aliceTumbling = [
     const thirdAnimation = alice3.animate(aliceTumbling, aliceTiming)
     await thirdAnimation.finished
 };
+forAnimation();
