@@ -116,6 +116,11 @@ nav .search {
   border: 0;
   color: white;
 }
+/*Added to hide the label for the search bar*/
+.hide {
+  display: none;
+}
+
 
 /* || main layout */
 
