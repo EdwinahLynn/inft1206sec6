@@ -16,6 +16,5 @@ window.onload = function(){
     document.querySelector('#btn3').addEventListener('click', function(){
         console.log("INFT1206");
     });
-
 }
 
